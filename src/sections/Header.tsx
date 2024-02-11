@@ -1,6 +1,6 @@
-import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5"
-import { T_toggleTheme } from "../constants/constants"
-import { BiBook } from "react-icons/bi"
+import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
+import { T_toggleTheme } from "../constants/constants";
+import { BiBook } from "react-icons/bi";
 
 function Header({ toggleTheme }: T_toggleTheme) {
   return (
@@ -12,7 +12,7 @@ function Header({ toggleTheme }: T_toggleTheme) {
         <IoMoonOutline size={40} className="moon hidden" />
       </button>
     </section>
-  )
+  );
 }
 
-export default Header
+export default Header;

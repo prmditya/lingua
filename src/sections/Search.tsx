@@ -1,5 +1,5 @@
-import { IoSearchOutline } from "react-icons/io5"
-import { useState } from "react"
+import { IoSearchOutline } from "react-icons/io5";
+import { useState } from "react";
 import { T_handleSearch } from "../constants/constants";
 
 function Search({ handleSearch }: T_handleSearch) {
@@ -13,12 +13,15 @@ function Search({ handleSearch }: T_handleSearch) {
           onChange={(e) => setQuery(e.target.value)}
           type="text"
         />
-        <button className="ml-auto mr-[10px]" onClick={() => handleSearch(query)}>
+        <button
+          className="ml-auto mr-[10px]"
+          onClick={() => handleSearch(query)}
+        >
           <IoSearchOutline className=" text-primary" size={20} />
         </button>
       </div>
     </section>
-  )
+  );
 }
 
-export default Search
+export default Search;

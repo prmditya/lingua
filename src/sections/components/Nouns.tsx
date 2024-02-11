@@ -1,5 +1,4 @@
 function Nouns({ nouns }: { nouns: any | undefined }) {
-
   return (
     <section className="result-meaning mt-[20px]">
       <div className="flex items-center">
@@ -9,11 +8,15 @@ function Nouns({ nouns }: { nouns: any | undefined }) {
       <section className="meaning my-[20px]">
         <h3 className="text-secondary mb-2">Meaning</h3>
         <ul className="list-disc ml-7">
-          {nouns.map((noun: any) => (<li key={crypto.randomUUID()} className="mb-3">{noun.definition}</li>))}
+          {nouns.map((noun: any) => (
+            <li key={crypto.randomUUID()} className="mb-3">
+              {noun.definition}
+            </li>
+          ))}
         </ul>
       </section>
     </section>
-  )
+  );
 }
 
-export default Nouns
+export default Nouns;

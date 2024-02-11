@@ -1,4 +1,3 @@
-
 function Verbs({ verbs }: { verbs: any | undefined }) {
   return (
     <section className="result-verb mt-[20px]">
@@ -9,11 +8,15 @@ function Verbs({ verbs }: { verbs: any | undefined }) {
       <section className="meaning my-[20px]">
         <h3 className="text-secondary mb-2">Meaning</h3>
         <ul className="list-disc ml-7">
-          {verbs.map((verb: any) => (<li key={crypto.randomUUID()} className="mb-3">{verb.definition}</li>))}
+          {verbs.map((verb: any) => (
+            <li key={crypto.randomUUID()} className="mb-3">
+              {verb.definition}
+            </li>
+          ))}
         </ul>
       </section>
     </section>
-  )
+  );
 }
 
-export default Verbs
+export default Verbs;
