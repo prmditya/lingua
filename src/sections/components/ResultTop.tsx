@@ -13,7 +13,7 @@ function ResultTop({ word, phonetic, audio }: { word: string | undefined, phonet
         <p className="mt-[14px] text-primary font-semibold">{phonetic}</p>
       </div>
       <button className="btn-audio ml-auto" onClick={() => playAudio(audio)}>
-        <div className="w-[60px] h-[60px] bg-[#3c91e696]  rounded-full flex justify-center items-center cursor-pointer hover:shadow-lg transition-all ease-in-out duration-300 " >
+        <div className="w-[60px] h-[60px] bg-[#3c91e696]  rounded-full flex justify-center items-center cursor-pointer hover:border-[5px] hover:border-secondary transition-all ease-in-out duration-200 " >
           <FaPlay size={20} className="ml-[3px] text-primary opacity-100 z-10" />
         </div>
       </button>
