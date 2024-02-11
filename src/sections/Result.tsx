@@ -12,7 +12,7 @@ function Result({ dictionaryResponse }: { dictionaryResponse: T_dictionaryRespon
 
   return (
     <section className="result dark:text-white">
-      {dictionaryResponse?.word === undefined ? <></> : (<ResultTop word={dictionaryResponse?.word} phonetic={dictionaryResponse?.phonetic} />)}
+      {dictionaryResponse?.word === undefined ? <></> : (<ResultTop word={dictionaryResponse?.word} phonetic={dictionaryResponse?.phonetic} audio={dictionaryResponse?.phonetics[1]?.audio} />)}
       {nouns.length === 0 ? <></> : (<Nouns nouns={nouns} />)}
       {verbs.length === 0 ? <></> : (<Verbs verbs={verbs} />)}
     </section>

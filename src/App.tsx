@@ -19,12 +19,6 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    if (dictionaryResponse) {
-      console.log(dictionaryResponse.phonetics[0]); // Updated value
-    }
-  }, [dictionaryResponse]);
-
   function toggleTheme() {
     document.querySelector('html')?.classList.toggle('dark');
     document.querySelector('.moon')?.classList.toggle('hidden');

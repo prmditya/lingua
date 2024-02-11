@@ -18,7 +18,7 @@ export interface T_dictionaryResponse {
   }[];
   phonetic: string | "";
   phonetics: {
-    audio: string;
+    audio: string | undefined | null,
   }[] | "";
   sourceUrls: string[] | "";
   word: string | "";
