@@ -8,18 +8,15 @@ export type T_toggleTheme = {
 }
 
 export interface T_dictionaryResponse {
-  license: {
-    name: string;
-    url: string;
-  } | "";
   meanings: {
     partOfSpeech: string,
     definitions: string[],
   }[];
   phonetic: string | "";
   phonetics: {
-    audio: string | undefined | null,
-  }[] | "";
+    text: string | "",
+    audio: string | "",
+  }[];
   sourceUrls: string[] | "";
   word: string | "";
 }

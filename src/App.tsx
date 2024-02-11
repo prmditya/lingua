@@ -17,7 +17,17 @@ function App() {
     } catch (error) {
       console.error('Error fetching data:', error);
     }
+
+    if (dictionaryResponse?.phonetics[0].audio === "") {
+      document.querySelector('.btn-audio')?.classList.add('hidden');
+    } else {
+      document.querySelector('.btn-audio')?.classList.remove('hidden');
+    }
   }
+
+  useEffect(() => {
+    console.log(dictionaryResponse?.phonetics[0].audio)
+  }, [dictionaryResponse])
 
   function toggleTheme() {
     document.querySelector('html')?.classList.toggle('dark');
