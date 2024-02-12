@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Header, Search, Result, Footer } from "./sections/sections";
 import { T_dictionaryResponse } from "./constants/constants";
+
 function App() {
   const [dictionaryResponse, setDictionaryResponse] =
     useState<T_dictionaryResponse>();
@@ -35,7 +36,7 @@ function App() {
   }
 
   return (
-    <main className="px-[19px] py-[35px] max-w-[700px] m-auto">
+    <main className="m-auto max-w-[700px] px-[19px] py-[35px]">
       <Header toggleTheme={toggleTheme} />
       <Search handleSearch={handleSearch} />
       <Result dictionaryResponse={dictionaryResponse} />
