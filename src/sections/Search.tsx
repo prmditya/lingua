@@ -7,9 +7,9 @@ function Search({ handleSearch }: T_handleSearch) {
 
   return (
     <section className="my-6">
-      <div className="flex items-center  rounded-[10px] bg-[#EAEAEA] dark:bg-[#323232] dark:text-white hover:shadow-md transition-all duration-300 ease-in-out">
+      <div className="flex  items-center rounded-[10px] bg-[#EAEAEA] transition-all duration-300 ease-in-out hover:shadow-md dark:bg-[#323232] dark:text-white">
         <input
-          className="ml-[15px] my-[10px] font-semibold bg-transparent focus:outline-none w-full  mr-1"
+          className="my-[10px] ml-[15px] mr-1 w-full bg-transparent font-semibold  focus:outline-none"
           onChange={(e) => setQuery(e.target.value)}
           type="text"
         />

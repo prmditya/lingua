@@ -14,8 +14,8 @@ function Result({
   let verbs: any = dictionaryResponse?.meanings
     .find((meaning) => meaning.partOfSpeech === "verb")
     ?.definitions.slice(0, 3);
-  let phonetics: any = dictionaryResponse?.phonetics.find(
-    (phonetic) => phonetic.audio !== undefined
+  const phonetics: any = dictionaryResponse?.phonetics.find(
+    (phonetic) => phonetic.audio !== undefined,
   );
 
   if (nouns === undefined) nouns = "";
