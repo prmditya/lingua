@@ -54,9 +54,9 @@ To run the Lingua Dictionary Web application locally on your machine, follow the
 1. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    # or
-   yarn start
+   yarn dev
    ```
 
 ### Understanding the Codebase
